@@ -18,6 +18,28 @@ class _MainScreenState extends State<MainScreen> {
   static ChatUser botUser = ChatUser(name: "MediBot", uid: "2");
   ChatData chatData = ChatData(messages: ["Hallo", ">>Hey! Wie geht es dir so?"]);
 
+  var messages = [
+    ChatMessage(text: "Hallo", user: theUser),
+    ChatMessage(
+      user: botUser,
+      text: "Hallo! Wie geht es dir heute?",
+      createdAt: DateTime.now(),
+      quickReplies: QuickReplies(
+        values: <Reply>[
+          Reply(
+            title: "😋 Gut",
+            value: "Gut",
+          ),
+          Reply(
+            title: "😞 Schlecht",
+            value: "Schlecht",
+          ),
+        ],
+      ),
+
+    ),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return PlatformScaffold(
@@ -27,11 +49,13 @@ class _MainScreenState extends State<MainScreen> {
       body: DashChat(
         user: theUser,
         inputDisabled: true,
-        messages: [
-          ChatMessage(text: "Hallo", user: theUser),
-          ChatMessage(text: "Hallo! Wie geht es dir heute?", user: botUser),
-        ],
-        onSend: (ChatMessage) {},
+        timeFormat: DateFormat("HH:mm"),
+        messages: messages,
+        onSend: (chatMessage) {
+          setState(() {
+            messages.add(chatMessage);
+          });
+        },
       ),
     );
   }
