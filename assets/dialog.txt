@@ -1,0 +1,12 @@
+1
+  > Hallo!
+  > Ich bin der MediBot. Wie geht es dir?
+  2 - Gut - Mir geht's wunderbar, danke dir? - Mir auch, danke!
+
+2
+  > Nächste Frage
+  > Bist du Schüler?
+  3 - Ja - Joa sicha, du a? - Klaro
+
+3
+  > Bye

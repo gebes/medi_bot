@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:medi_bot/screens/MainScreen.dart';
+import 'package:medi_bot/screens/main_screen.dart';
 import 'package:page_transition/page_transition.dart';
 
 void main() {
