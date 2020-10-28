@@ -113,7 +113,7 @@ class _MainScreenState extends State<MainScreen> {
         timeFormat: DateFormat("HH:mm"),
         dateFormat: DateFormat("dd.MM.yyyy"),
         messages: messages,
-        onQuickReply: (reply) {
+        onQuickReply: (reply) async{
           Reaction reaction = Reaction.fromString(reply.value);
           setState(() {
             messages.add(ChatMessage(text: reaction.value, user: theUser));
