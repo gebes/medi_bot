@@ -32,7 +32,7 @@ const RESOURCES = {
 "favicon.ico": "00efc5379d09ce26b60a1482f14fc184",
 "index.html": "5d666e3c544895e8ba16b638d4f430b1",
 "/": "5d666e3c544895e8ba16b638d4f430b1",
-"main.dart.js": "63e75d84ec798a333230aefacaede2fa",
+"main.dart.js": "3a882684ad9a71f993eb1d0f8fe43a59",
 "manifest.json": "1bf4a68e2182d0f2b5c2b8c3774c5b10",
 "ms-icon-144x144.png": "bb2bfe4d2d7758181c87f27b1f01fa1c",
 "ms-icon-150x150.png": "06cc5a6492a40427958424add1a9c92b",

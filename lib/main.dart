@@ -17,7 +17,7 @@ class MediBotApp extends StatelessWidget {
       title: 'MediBot',
       home: MainScreen(),
       navigatorKey: navigatorKey,
-      material: (_, __) => MaterialAppData(theme: ThemeData(primaryColor: Colors.green, primarySwatch: Colors.green), darkTheme: ThemeData.light()),
+      material: (_, __) => MaterialAppData(theme: ThemeData(primaryColor: Colors.green, primarySwatch: Colors.green), darkTheme: ThemeData(primaryColor: Colors.green, primarySwatch: Colors.green, brightness: Brightness.light)),
       cupertino: (_,__ )=> CupertinoAppData(theme: CupertinoThemeData(brightness: Brightness.light)),
       onGenerateRoute: (RouteSettings settings) {
         final args = settings.arguments;
