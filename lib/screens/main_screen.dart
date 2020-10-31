@@ -69,7 +69,9 @@ class _MainScreenState extends State<MainScreen> {
   Future _loadFile() async {
     String fileContent = await getFileData("assets/dialog.txt");
 
-    var lines = fileContent.split("\r\n");
+    var lines = LineSplitter().convert(fileContent);
+
+
 
     String current;
     for (String line in lines) {
