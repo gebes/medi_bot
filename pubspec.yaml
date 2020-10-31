@@ -34,6 +34,7 @@ dependencies:
   animate_do:
   dash_chat:
   indent:
+  url_launcher:
 
 dev_dependencies:
   flutter_test:

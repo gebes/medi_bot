@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:animate_do/animate_do.dart';
 import 'package:bubble/bubble.dart';
@@ -11,6 +12,7 @@ import 'package:medi_bot/utils/if_builder.dart';
 import 'package:medi_bot/utils/navigator.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:indent/indent.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 var kBoxShadow = [
   new BoxShadow(color: Colors.black.withAlpha(50), blurRadius: 4.0, offset: Offset(2, 3)),
@@ -24,6 +26,22 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   static Future<String> getFileData(String path) async {
     return await rootBundle.loadString(path);
+  }
+
+  static String filterMessage(String string) {
+    if (string.endsWith("\n")) {
+      string = string.substring(0, string.length - 1);
+    }
+
+    return (string.split("\|")..shuffle()).first;
+  }
+
+  static Future _launch(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
   }
 
   static ChatUser theUser = ChatUser(name: "Ich", uid: "1");
@@ -85,24 +103,37 @@ class _MainScreenState extends State<MainScreen> {
     }
 
     for (String message in messagesToSend) {
-      await Future.delayed(Duration(milliseconds: 250 * messages.length));
+      await Future.delayed(Duration(milliseconds: max(250 * messages.length, 1500)));
       List<Reply> replies = [];
       if (message == messagesToSend.last) {
         for (String r in parsedReactions) {
           Reaction reaction = Reaction.fromString(r);
+          if(r.startsWith("A"))
+            r = r.substring("A".length);
           replies.add(Reply(title: reaction.title, value: r));
         }
       }
       setState(() {
-        messages.add(ChatMessage(text: message, user: botUser, quickReplies: QuickReplies(values: replies)));
+        messages.add(ChatMessage(text: filterMessage(message), user: botUser, quickReplies: QuickReplies(values: replies)));
       });
     }
   }
 
-
-
   @override
   Widget build(BuildContext context) {
+    var patterns = <MatchText>[
+      MatchText(
+          pattern: r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
+          style: TextStyle(
+              color: Colors.blue,
+              decoration: TextDecoration.underline
+          ),
+          onTap: (String value) {
+            _launch(value);
+          }
+      ),
+
+    ];
     return PlatformScaffold(
       appBar: PlatformAppBar(
         title: Text("MediBot"),
@@ -113,15 +144,16 @@ class _MainScreenState extends State<MainScreen> {
         timeFormat: DateFormat("HH:mm"),
         dateFormat: DateFormat("dd.MM.yyyy"),
         messages: messages,
-        onQuickReply: (reply) async{
+          parsePatterns: patterns,
+        onQuickReply: (reply) async {
           Reaction reaction = Reaction.fromString(reply.value);
           setState(() {
-            messages.add(ChatMessage(text: reaction.value, user: theUser));
+            messages.add(ChatMessage(text: filterMessage(reaction.value), user: theUser));
             currentSection = reaction.next;
           });
           await Future.delayed(Duration(milliseconds: 250 * messages.length));
           setState(() {
-            messages.add(ChatMessage(text: reaction.response, user: botUser));
+            messages.add(ChatMessage(text: filterMessage(reaction.response), user: botUser));
           });
           sendCurrentSection();
         },
@@ -155,16 +187,25 @@ class _MainScreenState extends State<MainScreen> {
             decoration: BoxDecoration(boxShadow: kBoxShadow, borderRadius: BorderRadius.circular(32)),
           );
         },
-        messageTextBuilder: (text, [message]) {
+       messageTextBuilder: (text, [message]) {
           if (message.user == theUser) {
             return Text(
               text,
               style: TextStyle(color: Colors.white),
             );
           } else {
-            return Text(text);
+            return ParsedText(
+              parse: patterns,
+              text: message.text,
+              style: TextStyle(
+                color: message.user.color != null
+                    ? message.user.color
+                    :  Colors.black87,
+              ),
+            );
           }
         },
+        onSend: (ChatMessage) {},
       ),
     );
   }
