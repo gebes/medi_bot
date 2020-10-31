@@ -130,7 +130,7 @@ class _MainScreenState extends State<MainScreen> {
     ];
     return PlatformScaffold(
       appBar: PlatformAppBar(
-        title: Text("MediBot"),
+        title: Text("MediBot - Chatbot für deine Gesundheit"),
       ),
       body: DashChat(
         user: theUser,

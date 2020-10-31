@@ -54542,7 +54542,7 @@ s=2
 break
 case 4:return P.a9(null,r)}})
 return P.aa($async$lh,r)},
-F:function(a,b){var s=null,r=H.d([new G.mW("https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",A.eP(s,s,C.nq,s,C.l7,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s),new X.XZ())],t.tC),q=L.fC("MediBot",s,s,s,s,s),p=$.a1f(),o=T.a4B("HH:mm")
+F:function(a,b){var s=null,r=H.d([new G.mW("https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_\\+.~#?&//=]*)",A.eP(s,s,C.nq,s,C.l7,s,s,s,s,s,s,s,s,s,s,s,!0,s,s,s,s,s,s),new X.XZ())],t.tC),q=L.fC("MediBot - Chatbot f\xfcr deine Gesundheit",s,s,s,s,s),p=$.a1f(),o=T.a4B("HH:mm")
 o=new R.pW(this.r,!0,p,new X.Y_(),T.a4B("dd.MM.yyyy"),o,new X.Y0(),new X.Y1(r),r,new X.Y2(this),!0,new X.Y3(),s)
 o.bb=new R.S5()
 return new X.AX(o,new T.AW(q,s),s)}}
