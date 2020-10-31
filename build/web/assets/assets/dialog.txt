@@ -1,0 +1,79 @@
+1
+  > Hey du!
+  > Ich heiße MediBot und ich helf dir etwas sportlicher zu sein.
+  > Hast du Lust auf Sport?
+
+  A2 - Ja - Klaro - Genau das will ich hören!
+  A3 - Nein - Eher nicht, nein - Das werden wir jetzt ändern
+
+2
+ >Worum geht es dir im Sport?
+
+ A10 - Gesundheit - Mir gehts um die Gesundheit - Sehr vernünftig
+ A50 - Muskelaufbau - Ich mache gern Sport für den Muskelaufbau - Nice
+
+3
+ >Dann wird es jetzt Zeit, bist du jetzt bereit etwas für deinen Körper zu tun?
+
+ A2 - Ja, klar, mein  Körper und meine Psyche ist das wichtigste!  -  Ja, klar, mein  Körper und meine Psyche ist das wichtigste! - So will ich das hören!
+10
+ > Hast du Lust dich am morgen zu dehnen um frisch in den Tag zu starten?
+
+ A11 - 🏋️‍♀️Ja - Ja klar! Wie soll ich das am besten machen? - Ich kann dir ein gutes Video empfehlen womit ich 3 mal in der Woche in den Tag starte. Schau es dir an https://www.youtube.com/watch?v=c1A45LuuWhE
+ A11 - 👎Nein - Nein, bin kein Morgenmensch - Alles klar. Es ist auch okay eher ruhiger in den Tag zu starten.
+
+11
+ > Wie siehts mit gehen aus?
+ > Gehst du jeden Tag genug Schritte? Also so um die 6.000 bis 10.000
+
+ A12 - 🏃‍♀️Ja - Natürlich! Bewegung ist wichtig für mich - Sehr gut, nur weiter so!
+ A12 - 👎Nein - Eigentlich nicht, nein. - Oh! Versuche vielleicht mal Schritte zu sammeln während du auf den Bus/Zug wartest. Ab und zu spazieren zu gehen wird dir auch sicher gut tun.
+
+12
+ > Ich hab auch noch eine andere Frage:
+ > Betreibst du in deiner Freizeit auch regelmäßig Sport?
+
+ A13 - 🏋️‍♀️Ja - Ja. So oft wie es nur geht - Sehr engagiert
+ A13 - 👎Nein - Nein, ich nutze meine Freizeit anders - Ok, schau dir mal bei dieser Gelegenheit um, hier eine von Aktivitäten. Vielleicht findest du etwas https://www.fitsportaustria.at/main.asp?VID=1&kat1=108&kat2=715
+
+13
+ > Hast du lust auf eine Übersicht über Sport und Gesundheit?
+
+ A75 - 🏋️‍♀️Ja  - Ja, gib her - Hier https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
+
+50
+
+ > Trainierst du daheim oder im Fitnessstudio?
+
+ A51 - Fitnessstudio - Ich trainiere meistens im Fitnessstudio - Sehr Gut
+ A75 - Daheim - Ich bin so einer der lieber zu Hause ist und dort trainiert. - Sehr Gut. Zu Hause ist es am besten, nicht war?
+
+51
+ > Machst du öfters Cardio in deinem Training?
+ > Also Ausdauer Training, was gut für dein Herz ist.
+
+ A52 - 🏋️‍♀️Ja - Sicher. Ich möchte halt solange wie möglich Gesund bleiben. - Sehr vorbildlich
+ A52 - 👎Nein - Nein, eigentlich nicht. - Hmm okay. Cardio Training ist aber sehr wichtig für die Gesundheit. Ich persönlich würde mir dieses Video anschauen https://www.youtube.com/watch?v=lqE6kykIU88
+
+52
+ > Dehnst du dich immer?
+
+ A54 - 🏋️‍♀️Ja - Natürlich! Ich weiß doch wie wichtig richtiges Dehnen für den Muskelaufbau ist! - Sehr vorbildlich
+ A54 - 👎Nein - Nein leider - Dehnen ist sehr wichtig für den Muskelaufbau! Hier eine Videoempfehlung https://www.youtube.com/watch?v=dIH8degD0TY
+
+54
+ >Möchtest du noch einen Fitnesstipp haben?
+
+ A13 -  🏋️‍♀️Ja - Immer! Nur her damit - Dann solltest du dir dieses Video anschauen https://www.youtube.com/watch?v=8_IUR_AjP34 und wenn du noch Wissenhungrig bist dann solltest du dir Youtuber wie Sascha Huber (https://www.youtube.com/user/keiiner123), Tim Gabel (https://www.youtube.com/user/timgabelofficial), Coach Stef ( https://www.youtube.com/user/60DaysOfFitness ) und viele mehr anschauen, oder es spricht auch nichts dagegen dich in ein paar Bücher einzulesen.
+
+75
+ > Für daheim empfehle ich vor allem Workouts.
+ > Erst recht in der aktuellen Situation, wo man meistens zu Hause bleiben muss
+ > Möchtest du ein paar Empfehlungen?
+
+ A13 - 🏋️‍♀️Ja - Sicher, wenn du ein paar gute hast. - Klar! Der Youtuber Sascha Huber ist sehr zu empfehlen. Auf seinen Kanal findest du Trainingspläne, Ernährungspläne und vor allem Workouts. Hier https://www.youtube.com/user/keiiner123
+
+100
+ > Bis dann!
+ > Hab einen schönen und erfolgreichen Tag.
+
