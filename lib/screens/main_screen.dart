@@ -71,8 +71,6 @@ class _MainScreenState extends State<MainScreen> {
 
     var lines = LineSplitter().convert(fileContent);
 
-
-
     String current;
     for (String line in lines) {
       if (line.unindent().isEmpty) {
@@ -110,8 +108,7 @@ class _MainScreenState extends State<MainScreen> {
       if (message == messagesToSend.last) {
         for (String r in parsedReactions) {
           Reaction reaction = Reaction.fromString(r);
-          if(r.startsWith("A"))
-            r = r.substring("A".length);
+          if (r.startsWith("A")) r = r.substring("A".length);
           replies.add(Reply(title: reaction.title, value: r));
         }
       }
@@ -126,15 +123,10 @@ class _MainScreenState extends State<MainScreen> {
     var patterns = <MatchText>[
       MatchText(
           pattern: r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
-          style: TextStyle(
-              color: Colors.blue,
-              decoration: TextDecoration.underline
-          ),
+          style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
           onTap: (String value) {
             _launch(value);
-          }
-      ),
-
+          }),
     ];
     return PlatformScaffold(
       appBar: PlatformAppBar(
@@ -146,7 +138,8 @@ class _MainScreenState extends State<MainScreen> {
         timeFormat: DateFormat("HH:mm"),
         dateFormat: DateFormat("dd.MM.yyyy"),
         messages: messages,
-          parsePatterns: patterns,
+        parsePatterns: patterns,
+        quickReplyScroll: true,
         onQuickReply: (reply) async {
           Reaction reaction = Reaction.fromString(reply.value);
           setState(() {
@@ -189,7 +182,7 @@ class _MainScreenState extends State<MainScreen> {
             decoration: BoxDecoration(boxShadow: kBoxShadow, borderRadius: BorderRadius.circular(32)),
           );
         },
-       messageTextBuilder: (text, [message]) {
+        messageTextBuilder: (text, [message]) {
           if (message.user == theUser) {
             return Text(
               text,
@@ -200,9 +193,7 @@ class _MainScreenState extends State<MainScreen> {
               parse: patterns,
               text: message.text,
               style: TextStyle(
-                color: message.user.color != null
-                    ? message.user.color
-                    :  Colors.black87,
+                color: message.user.color != null ? message.user.color : Colors.black87,
               ),
             );
           }

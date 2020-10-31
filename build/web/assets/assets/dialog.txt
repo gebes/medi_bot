@@ -1,79 +1,203 @@
 1
-  > Hey du!
-  > Ich heiße MediBot und ich helf dir etwas sportlicher zu sein.
-  > Hast du Lust auf Sport?
+  > Hey, ich bin der MediBot. Cool das du hier bist.
+  > Du kannst mit mir über alles rund um Gesundheit chatten. Ich werde dir immer rasch, anonym und direkt antworten!
+  > Fangen wir einmal an: Wie fühlst du dich heute so?
 
-  A2 - Ja - Klaro - Genau das will ich hören!
-  A3 - Nein - Eher nicht, nein - Das werden wir jetzt ändern
-
-2
- >Worum geht es dir im Sport?
-
- A10 - Gesundheit - Mir gehts um die Gesundheit - Sehr vernünftig
- A50 - Muskelaufbau - Ich mache gern Sport für den Muskelaufbau - Nice
-
-3
- >Dann wird es jetzt Zeit, bist du jetzt bereit etwas für deinen Körper zu tun?
-
- A2 - Ja, klar, mein  Körper und meine Psyche ist das wichtigste!  -  Ja, klar, mein  Körper und meine Psyche ist das wichtigste! - So will ich das hören!
-10
- > Hast du Lust dich am morgen zu dehnen um frisch in den Tag zu starten?
-
- A11 - 🏋️‍♀️Ja - Ja klar! Wie soll ich das am besten machen? - Ich kann dir ein gutes Video empfehlen womit ich 3 mal in der Woche in den Tag starte. Schau es dir an https://www.youtube.com/watch?v=c1A45LuuWhE
- A11 - 👎Nein - Nein, bin kein Morgenmensch - Alles klar. Es ist auch okay eher ruhiger in den Tag zu starten.
+  A11 - Gut😄 - Ganz gut soweit! - Das freut mich zu hören!
+  A12 - Nicht so gut🤕 - Heute nicht so gut... - Oje. Warte, vielleicht hab ich einige Tipps für dich...
+  A13 - Kann ich nicht beurteilen😐 - Weiß ich nicht genau... - Hmmm, dann schauen wir uns das mal an...
 
 11
+  > Willst du nun von mir ein paar Tipps zu einem gesunden Lifestyle bekommen?
+
+  A111 - Ja bitte👍 - Dann lass mal hören... - Klar, gerne:
+  AEND - Nein👎 - Eher nicht... - Okay schade. Besuche mich wieder, wenn du mit mir chatten möchtest.
+
+111
+  > 1. Immer genug trinken - mindestens 6 Gläser Wasser am Tag!
+  > 2. Auf eine ausgewogene Ernährung achten.
+  > 3. Raus gehen, in die Sonne legen.
+  > 4. Eine Sportart 3 mal pro Woche betreiben.
+
+  A1111 - Das schaffe ich👍 - Das geht leicht klar für mich! - Das ist eine gute Einstellung. Wenn du das schaffst, minimiers du die gefahr Krank zu werden.
+  A1112 - Das kann ich nicht👎 - Ich schaffe das nie... - Wenn du das wirklich willst, kannst du das schaffen. Ich glaube an dich!
+  A1113 - Das ist mein Wochenalltag👍 - So sieht meine Woche aus! - Wow. Du hast den besten Zeitplan den man haben kann, du kannst stolz sein.
+
+1111
+  > Hier sind noch ein paar Tipps:
+  > Für das Aufzeichnen von Nahrung, gibt es diverse Smartphone-Apps, wo du deine Ernährung tracken kannst.
+  > In die Sonne gehen, solltest du sooft du kannst, da Sonne auf der Haut viel Vitamin D3 produziert.
+  > Sport kannst du überall betreiben. Ob du ein Heimworkout mit YouTube Videos machst, ins Fitnessstudio gehst, in einem Verein spielst, oder nur joggen gehst - alles tut dir gut.
+  > Brauchst du sonst bei noch etwas Hilfe?
+
+  AELSE - Ja bitte👍 - Ja, bitte! - Klar, gerne!
+  AEND - Nein👎 - Danke, das war alles! - Natürlich.
+
+1112
+  > Du kannst erreichen was du willst, wenn du daran glaubst. Wenn du diese Tipps befolgst, wirst du wie ein neuer Mensch sein.
+
+  A1111 - Ich schaffe das!👍 - Das schaffe ich natürlich! - Gute Einstellung! Wenn du diese Tipps befolgst, wird sich dein Leben sicher verändern.
+
+1113
+  > Du hast deinen Körper sehr gut unter kontrolle und bist ein sehr gesunder Mensch. Mach weiter so!
+  > Brauchst du sonst bei noch etwas Hilfe?
+
+  AELSE - Ja bitte👍 - Ja, bitte! - Klar, gerne!
+  AEND - Nein👎 - Danke, das war alles! - Natürlich.
+
+12
+  > Wodurch fühlst du dich nicht so gut?
+
+  A121 - Wegen meiner Psyche - Von der Psycher her - Das kann ein sehr großes Problem sein, gerade in Zeiten von Corona, wo jeder alleine daheim ist, und sich viel Stress aufgibt.
+  A122 - Ich bin krank - Ich habe mich irgendwo angesteckt - Oje. Warte, ich hab hier ein paar hilfreiche Hinweise für dich.
+  A13 - Weiß ich nicht genau - Ich bin mir nicht sicher... - Okay, dann lass uns mal überprüfen warum!
+
+121
+  > Hättest du gerne Tipps um deine Mentalität zu stärken?
+
+  A1211 - Ja gerne👍 - Ja, bitte! - Natürlich, hier sind meine Tipps:
+  AEND - Nein👎 - Eher nicht... - Okay schade. Besuche mich wieder, wenn du mit mir chatten möchtest.
+
+1211
+  > 1. Soziale Kontakte sind wichtig. Dabei ist es egal wie - ob über Handy, diverse Chat-Apps wie Discord, oder Persönlich. Obwohl persönliche Treffen meißtens am meißten bewirken.
+  > 2. Reduziere Stress. Plane alles was du machen willst, genau ein, und überlege dir was wichtig und was unwichtig ist.
+  > 3. Stoppe negatives denken. Denke positiv in jeder möglichen Situation - es erleichtert dir einiges.
+  > 4. Triff deine eigenen Entscheidungen und akzeptiere Veränderungen. Sie werden dir deine Lebensart verändern.
+  > 5. Dankbarkeit zeigen und aus Fehlern lernen. Viele Menschen wollen Ihnen nur helfen.
+  > 6. Langeweile muss nicht gleich schlecht sein - sie kann auch zu kreativität führen.
+  > Das wären dann meine Tipps für bessere Mentalität. Brauchst du sonst noch bei etwas Hilfe?
+
+  AELSE - Ja bitte👍 - Ja, bitte! - Klar, gerne!
+  AEND - Nein👎 - Danke, das war alles! - Natürlich.
+
+122
+  > Hättest du gerne Tipps um schneller gesund zu werden?
+
+  A1221 - Ja gerne👍 - Ja, bitte! - Natürlich, hier sind meine Tipps:
+  AEND - Nein👎 - Eher nicht... - Okay schade. Besuche mich wieder, wenn du mit mir chatten möchtest.
+
+1221
+  > 1. Im Bett liegen bleiben, und versuchen zu schlafen ist immer noch der Nummer Eins Tipp. Gegen Langeweile kannst du sonst auch ein Buch lesen oder Fernsehen.
+  > 2. Tee trinken, und kein sehr intensives Essen essen. Belaste deinen Körper nicht noch zusätzlich mit üppigem Essen.
+  > 3. Ohne jeglichen Fortschritt der Regenerierung, den Arzt aufsuchen. Verbessert sich dein Gesundheitsstatus nicht, ist der Arzt die beste Lösung.
+  > Falls du gerade krank bist, wünsche ich dir natürlich gute Besserung.
+  > Das wären dann soweit meine Tipps. Brauchst du sonst noch bei etwas Hilfe?
+
+  AELSE - Ja bitte👍 - Ja, bitte! - Klar, gerne!
+  AEND - Nein👎 - Danke, das war alles! - Natürlich.
+
+13
+  > Warst du heute schon draußen?
+
+  A131 - Ja👍 - Ja, natürlich - Das ist toll. Der Körper nimmt durch Sonnenlicht sehr viel Vitamin D3 auf, was für den Knochenaufbau sehr wichtig ist.
+  A131 - Nein👎 - Nein, noch nicht - Das ist nicht so gut. Vitamin D3 nimmt der Körper über Sonnenlicht auf, was für den Knochenaufbau sehr wichtig ist.
+
+A131
+  > Achtest du generell sehr stark auf deine Gesundheit?
+
+  A1311 - Ja👍 - Ja, natürlich - So gehört sich das. Nichts geht über die eigene Gesundheit.
+  A1311 - Nein, nicht so stark👎 - Nichts geht über die eigene Gesundheit. Es ist sehr wichtig, dass man sich in seinem Körper wohl und sicher fühlt.
+
+A1311
+  > Treibst du generell Sport?
+
+  A13111 - Ja👍 - Ja, natürlich - Das ist gut. Sport ist sehr wichtig für eine gesunde Muskulatur, und hilft den Körper für das Alter aufzubauen.
+  A13112 - Nein👎 - Nein, leider nicht - Das ist nicht so gut. Allerdings hätte ich hier ein paar Tipps für dich.
+
+A13111
+  > Möchtest du zum Abschluss noch ein paar Tipps für bessere Gesundheit hören?
+
+  A111 - Ja👍 - Ja, bitte - Okay, gerne!
+  AEND - Nein👎 - Nein, jetzt nicht... - Okay.
+
+A13112
+  > Möchtest du fitter werden, und hast lust auf etwas mehr Sport?
+
+  AS1 - Ja👍 - Ja, bitte - Okay, gerne!
+  AEND - Nein👎 - Nein danke - Schade, dann nicht.
+
+S1
+ >Worum geht es dir im Sport?
+
+ AS10 - Gesundheit🏥 - Mir gehts um die Gesundheit - Sehr vernünftig
+ AS50 - Muskelaufbau🏋️ - Ich mache gern Sport für den Muskelaufbau - Das ist toll.
+
+S10
+ > Hast du Lust dich am morgen zu dehnen um frisch in den Tag zu starten?
+
+ A11 - Ja👍 - Ja klar! Wie soll ich das am besten machen? - Ich kann dir ein gutes Video empfehlen womit ich 3 mal in der Woche in den Tag starte. Schau es dir an https://www.youtube.com/watch?v=c1A45LuuWhE
+ A11 - Nein👎 - Nein, bin kein Morgenmensch - Alles klar. Es ist auch okay eher ruhiger in den Tag zu starten.
+
+S11
  > Wie siehts mit gehen aus?
  > Gehst du jeden Tag genug Schritte? Also so um die 6.000 bis 10.000
 
- A12 - 🏃‍♀️Ja - Natürlich! Bewegung ist wichtig für mich - Sehr gut, nur weiter so!
- A12 - 👎Nein - Eigentlich nicht, nein. - Oh! Versuche vielleicht mal Schritte zu sammeln während du auf den Bus/Zug wartest. Ab und zu spazieren zu gehen wird dir auch sicher gut tun.
+ AS12 - Ja👍 - Natürlich! Bewegung ist wichtig für mich - Sehr gut, nur weiter so!
+ AS12 - Nein👎 - Eigentlich nicht, nein. - Oh! Versuche vielleicht mal Schritte zu sammeln während du auf den Bus/Zug wartest. Ab und zu spazieren zu gehen wird dir auch sicher gut tun.
 
-12
+S12
  > Ich hab auch noch eine andere Frage:
  > Betreibst du in deiner Freizeit auch regelmäßig Sport?
 
- A13 - 🏋️‍♀️Ja - Ja. So oft wie es nur geht - Sehr engagiert
- A13 - 👎Nein - Nein, ich nutze meine Freizeit anders - Ok, schau dir mal bei dieser Gelegenheit um, hier eine von Aktivitäten. Vielleicht findest du etwas https://www.fitsportaustria.at/main.asp?VID=1&kat1=108&kat2=715
+ AS13 - Ja👍 - Ja. So oft wie es nur geht - Sehr engagiert
+ AS13 - Nein👎 - Nein, ich nutze meine Freizeit anders - Ok, schau dir mal bei dieser Gelegenheit um, hier eine von Aktivitäten. Vielleicht findest du etwas https://www.fitsportaustria.at/main.asp?VID=1&kat1=108&kat2=715
 
-13
+S13
  > Hast du lust auf eine Übersicht über Sport und Gesundheit?
 
- A75 - 🏋️‍♀️Ja  - Ja, gib her - Hier https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
+ AS75 - Ja👍  - Ja, gib her - Hier https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
 
-50
+S50
 
  > Trainierst du daheim oder im Fitnessstudio?
 
- A51 - Fitnessstudio - Ich trainiere meistens im Fitnessstudio - Sehr Gut
- A75 - Daheim - Ich bin so einer der lieber zu Hause ist und dort trainiert. - Sehr Gut. Zu Hause ist es am besten, nicht war?
+ AS51 - Fitnessstudio🏋️ - Ich trainiere meistens im Fitnessstudio - Sehr Gut
+ AS75 - Daheim🏡 - Ich bin so einer der lieber zu Hause ist und dort trainiert. - Sehr Gut. Zu Hause ist es am besten, nicht war?
 
-51
+S51
  > Machst du öfters Cardio in deinem Training?
  > Also Ausdauer Training, was gut für dein Herz ist.
 
- A52 - 🏋️‍♀️Ja - Sicher. Ich möchte halt solange wie möglich Gesund bleiben. - Sehr vorbildlich
- A52 - 👎Nein - Nein, eigentlich nicht. - Hmm okay. Cardio Training ist aber sehr wichtig für die Gesundheit. Ich persönlich würde mir dieses Video anschauen https://www.youtube.com/watch?v=lqE6kykIU88
+ AS52 - Ja👍 - Sicher. Ich möchte halt solange wie möglich Gesund bleiben. - Sehr vorbildlich
+ AS52 - Nein👎 - Nein, eigentlich nicht. - Hmm okay. Cardio Training ist aber sehr wichtig für die Gesundheit. Ich persönlich würde mir dieses Video anschauen https://www.youtube.com/watch?v=lqE6kykIU88
 
-52
+S52
  > Dehnst du dich immer?
 
- A54 - 🏋️‍♀️Ja - Natürlich! Ich weiß doch wie wichtig richtiges Dehnen für den Muskelaufbau ist! - Sehr vorbildlich
- A54 - 👎Nein - Nein leider - Dehnen ist sehr wichtig für den Muskelaufbau! Hier eine Videoempfehlung https://www.youtube.com/watch?v=dIH8degD0TY
+ AS54 - Ja👍 - Natürlich! Ich weiß doch wie wichtig richtiges Dehnen für den Muskelaufbau ist! - Sehr vorbildlich
+ AS54 - Nein👎 - Nein leider - Dehnen ist sehr wichtig für den Muskelaufbau! Hier eine Videoempfehlung https://www.youtube.com/watch?v=dIH8degD0TY
 
-54
+S54
  >Möchtest du noch einen Fitnesstipp haben?
 
- A13 -  🏋️‍♀️Ja - Immer! Nur her damit - Dann solltest du dir dieses Video anschauen https://www.youtube.com/watch?v=8_IUR_AjP34 und wenn du noch Wissenhungrig bist dann solltest du dir Youtuber wie Sascha Huber (https://www.youtube.com/user/keiiner123), Tim Gabel (https://www.youtube.com/user/timgabelofficial), Coach Stef ( https://www.youtube.com/user/60DaysOfFitness ) und viele mehr anschauen, oder es spricht auch nichts dagegen dich in ein paar Bücher einzulesen.
+ AS13 -  Ja👍 - Immer! Nur her damit - Dann solltest du dir dieses Video anschauen https://www.youtube.com/watch?v=8_IUR_AjP34 und wenn du noch Wissenhungrig bist dann solltest du dir Youtuber wie Sascha Huber (https://www.youtube.com/user/keiiner123), Tim Gabel (https://www.youtube.com/user/timgabelofficial), Coach Stef ( https://www.youtube.com/user/60DaysOfFitness ) und viele mehr anschauen, oder es spricht auch nichts dagegen dich in ein paar Bücher einzulesen.
 
-75
+S75
  > Für daheim empfehle ich vor allem Workouts.
  > Erst recht in der aktuellen Situation, wo man meistens zu Hause bleiben muss
  > Möchtest du ein paar Empfehlungen?
 
- A13 - 🏋️‍♀️Ja - Sicher, wenn du ein paar gute hast. - Klar! Der Youtuber Sascha Huber ist sehr zu empfehlen. Auf seinen Kanal findest du Trainingspläne, Ernährungspläne und vor allem Workouts. Hier https://www.youtube.com/user/keiiner123
+ AS13 - Ja👍 - Sicher, wenn du ein paar gute hast. - Klar! Der Youtuber Sascha Huber ist sehr zu empfehlen. Auf seinen Kanal findest du Trainingspläne, Ernährungspläne und vor allem Workouts. Hier https://www.youtube.com/user/keiiner123
 
-100
+ELSE
+  > Brauchst du sonst noch bei etwas Hilfe?
+
+  A111 - Tipps zu besserer Gesundheit📜 - Erklär mir wie ich ein gesünderer Mensch werden kann! - Gerne.
+  A1211 - Tipps zu besserer Mentalität📜 - Erklär mir, wie ich eine bessere Mentalität bekommen kann! - Gerne.
+  AS1 - Besser Sport machen📜 - Ich möchte besser Sport machen! - Klar!
+  AABOUT - Über MediBot📜 - Erzähl mir was über dich! - Liebend gerne!
+  A1 - Neu starten🔙 - Zum Anfang zurück bitte! - Natürlich!
+  AEND - Beenden❌ - Ich möchte beenden. - Okay.
+
+ABOUT
+  > MediBot - A project by Markus, Christoph and Toby 2020
+  > Jegliche gegebenen Tipps dienen nur als Empfehlungen, sind nicht wissenschaftlich empfohlen, oder müssen eingehalten werden.
+
+  AELSE - Zurück🔙 - Zurück bitte! - Selbstverständlich.
+
+END
  > Bis dann!
- > Hab einen schönen und erfolgreichen Tag.
+ > Hab noch einen schönen und erfolgreichen Tag.
+
+  A1 - Zurück zum Anfang🔙 - Neu starten bitte! - Okay...
 
