@@ -21,7 +21,7 @@ const RESOURCES = {
 "apple-icon-precomposed.png": "2c24a8440836de52a1be545174a5907d",
 "apple-icon.png": "2c24a8440836de52a1be545174a5907d",
 "assets/AssetManifest.json": "f781bd8ca3ee2dc21f6adf2d721f276b",
-"assets/assets/dialog.txt": "26b196370272be2860832c49d63ea5a0",
+"assets/assets/dialog.txt": "786d8033b74768cfe52d32b126eeb23a",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/NOTICES": "becf7f021c8d8e4207f93b2b4910476b",
