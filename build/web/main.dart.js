@@ -54526,7 +54526,7 @@ a.push(m.oI(l,m.oq(l),0))}else a0.push(n)}b=a.length,p=q.r,m=t.z,k=t.z8,o=0
 case 2:if(!(o<a.length)){s=4
 break}j=a[o]
 s=5
-return P.ai(P.Mr(new P.ar(1000*Math.max(250*p.length,1500)),m),$async$lh)
+return P.ai(P.Mr(new P.ar(1000*Math.min(250*p.length,2000)),m),$async$lh)
 case 5:i=H.d([],k)
 if(j===C.b.gat(a))for(h=a0.length,g=0;g<a0.length;a0.length===h||(0,H.I)(a0),++g){f=a0[g]
 e=new X.Bd()

@@ -103,7 +103,7 @@ class _MainScreenState extends State<MainScreen> {
     }
 
     for (String message in messagesToSend) {
-      await Future.delayed(Duration(milliseconds: max(250 * messages.length, 1500)));
+      await Future.delayed(Duration(milliseconds: min(250 * messages.length, 2000)));
       List<Reply> replies = [];
       if (message == messagesToSend.last) {
         for (String r in parsedReactions) {
