@@ -92,25 +92,25 @@
   A131 - Ja👍 - Ja, natürlich - Das ist toll. Der Körper nimmt durch Sonnenlicht sehr viel Vitamin D3 auf, was für den Knochenaufbau sehr wichtig ist.
   A131 - Nein👎 - Nein, noch nicht - Das ist nicht so gut. Vitamin D3 nimmt der Körper über Sonnenlicht auf, was für den Knochenaufbau sehr wichtig ist.
 
-A131
+131
   > Achtest du generell sehr stark auf deine Gesundheit?
 
   A1311 - Ja👍 - Ja, natürlich - So gehört sich das. Nichts geht über die eigene Gesundheit.
   A1311 - Nein, nicht so stark👎 - Nichts geht über die eigene Gesundheit. Es ist sehr wichtig, dass man sich in seinem Körper wohl und sicher fühlt.
 
-A1311
+1311
   > Treibst du generell Sport?
 
   A13111 - Ja👍 - Ja, natürlich - Das ist gut. Sport ist sehr wichtig für eine gesunde Muskulatur, und hilft den Körper für das Alter aufzubauen.
   A13112 - Nein👎 - Nein, leider nicht - Das ist nicht so gut. Allerdings hätte ich hier ein paar Tipps für dich.
 
-A13111
+13111
   > Möchtest du zum Abschluss noch ein paar Tipps für bessere Gesundheit hören?
 
   A111 - Ja👍 - Ja, bitte - Okay, gerne!
   AEND - Nein👎 - Nein, jetzt nicht... - Okay.
 
-A13112
+13112
   > Möchtest du fitter werden, und hast lust auf etwas mehr Sport?
 
   AS1 - Ja👍 - Ja, bitte - Okay, gerne!

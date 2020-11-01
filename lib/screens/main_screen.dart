@@ -51,6 +51,7 @@ class _MainScreenState extends State<MainScreen> {
   Map<String, String> sections = {};
   String currentSection = "1";
   List<ChatMessage> messages = [];
+  ScrollController sc = new ScrollController();
 
   @override
   void initState() {
@@ -115,7 +116,16 @@ class _MainScreenState extends State<MainScreen> {
       setState(() {
         messages.add(ChatMessage(text: filterMessage(message), user: botUser, quickReplies: QuickReplies(values: replies)));
       });
+      _jumpToBottom();
     }
+  }
+
+  _jumpToBottom() {
+    sc.animateTo(
+      sc.position.maxScrollExtent + 128,
+      curve: Curves.easeOut,
+      duration: const Duration(milliseconds: 300),
+    );
   }
 
   @override
@@ -140,16 +150,19 @@ class _MainScreenState extends State<MainScreen> {
         messages: messages,
         parsePatterns: patterns,
         quickReplyScroll: true,
+        scrollController: sc,
         onQuickReply: (reply) async {
           Reaction reaction = Reaction.fromString(reply.value);
           setState(() {
             messages.add(ChatMessage(text: filterMessage(reaction.value), user: theUser));
             currentSection = reaction.next;
           });
+          _jumpToBottom();
           await Future.delayed(Duration(milliseconds: 250 * messages.length));
           setState(() {
             messages.add(ChatMessage(text: filterMessage(reaction.response), user: botUser));
           });
+          _jumpToBottom();
           sendCurrentSection();
         },
         messageDecorationBuilder: (chatMessage, isUser) {
