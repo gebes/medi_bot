@@ -10,7 +10,7 @@
 11
   > Willst du nun von mir ein paar Tipps zu einem gesunden Lifestyle bekommen?
 
-  A111 - Ja bitte👍 - Dann lass mal hören... - Klar, gerne:
+  A111 - Ja bitte👍 - Dann lass mal hören... - Klar, gerne, hier meine Tipps.
   AEND - Nein👎 - Eher nicht... - Okay schade. Besuche mich wieder, wenn du mit mir chatten möchtest.
 
 111
@@ -18,6 +18,7 @@
   > 2. Auf eine ausgewogene Ernährung achten.
   > 3. Raus gehen, in die Sonne legen.
   > 4. Eine Sportart 3 mal pro Woche betreiben.
+  > 5. Pro Tag 10 Stunden schlafen.
 
   A1111 - Das schaffe ich👍 - Das geht leicht klar für mich! - Das ist eine gute Einstellung. Wenn du das schaffst, minimiers du die gefahr Krank zu werden.
   A1112 - Das kann ich nicht👎 - Ich schaffe das nie... - Wenn du das wirklich willst, kannst du das schaffen. Ich glaube an dich!
@@ -96,7 +97,7 @@
   > Achtest du generell sehr stark auf deine Gesundheit?
 
   A1311 - Ja👍 - Ja, natürlich - So gehört sich das. Nichts geht über die eigene Gesundheit.
-  A1311 - Nein, nicht so stark👎 - Nichts geht über die eigene Gesundheit. Es ist sehr wichtig, dass man sich in seinem Körper wohl und sicher fühlt.
+  A1311 - Nein - Nein, nicht so stark👎 - Nichts geht über die eigene Gesundheit. Es ist sehr wichtig, dass man sich in seinem Körper wohl und sicher fühlt.
 
 1311
   > Treibst du generell Sport?
@@ -145,7 +146,7 @@ S12
 S13
  > Hast du lust auf eine Übersicht über Sport und Gesundheit?
 
- AS75 - Ja👍  - Ja, gib her - Hier https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
+ AS75 - Zeig mal her👍  - Ja, bitte! - Hier hast du eine Übersicht: https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
 
 S50
 
@@ -156,7 +157,7 @@ S50
 
 S51
  > Machst du öfters Cardio in deinem Training?
- > Also Ausdauer Training, was gut für dein Herz ist.
+ > Also Ausdauer Training, was deine Herzleistung fördert.
 
  AS52 - Ja👍 - Sicher. Ich möchte halt solange wie möglich Gesund bleiben. - Sehr vorbildlich
  AS52 - Nein👎 - Nein, eigentlich nicht. - Hmm okay. Cardio Training ist aber sehr wichtig für die Gesundheit. Ich persönlich würde mir dieses Video anschauen https://www.youtube.com/watch?v=lqE6kykIU88
@@ -180,7 +181,7 @@ S75
  AS13 - Ja👍 - Sicher, wenn du ein paar gute hast. - Klar! Der Youtuber Sascha Huber ist sehr zu empfehlen. Auf seinen Kanal findest du Trainingspläne, Ernährungspläne und vor allem Workouts. Hier https://www.youtube.com/user/keiiner123
 
 ELSE
-  > Brauchst du sonst noch bei etwas Hilfe?
+  > Wobei kann ich dir sonst noch helfen?
 
   A111 - Tipps zu besserer Gesundheit📜 - Erklär mir wie ich ein gesünderer Mensch werden kann! - Gerne.
   A1211 - Tipps zu besserer Mentalität📜 - Erklär mir, wie ich eine bessere Mentalität bekommen kann! - Gerne.
@@ -191,7 +192,7 @@ ELSE
 
 ABOUT
   > MediBot - A project by Markus, Christoph and Toby 2020
-  > Jegliche gegebenen Tipps dienen nur als Empfehlungen, sind nicht wissenschaftlich empfohlen, oder müssen eingehalten werden.
+  > Jegliche gegebenen Tipps dienen nur als Empfehlungen, bestehen teilweise aus eigenen Erfahrungen oder Online-Quellen, und sind weder wissenschaftlich empfohlen, noch müssen sie eingehalten werden.
 
   AELSE - Zurück🔙 - Zurück bitte! - Selbstverständlich.
 
@@ -200,4 +201,3 @@ END
  > Hab noch einen schönen und erfolgreichen Tag.
 
   A1 - Zurück zum Anfang🔙 - Neu starten bitte! - Okay...
-
