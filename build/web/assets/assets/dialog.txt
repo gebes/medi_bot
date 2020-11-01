@@ -20,7 +20,7 @@
   > 4. Eine Sportart 3 mal pro Woche betreiben.
   > 5. Pro Tag 10 Stunden schlafen.
 
-  A1111 - Das schaffe ich👍 - Das geht leicht klar für mich! - Das ist eine gute Einstellung. Wenn du das schaffst, minimiers du die gefahr Krank zu werden.
+  A1111 - Das schaffe ich👍 - Das geht leicht klar für mich! - Das ist eine gute Einstellung. Wenn du das schaffst, minimierst du die Gefahr krank zu werden.
   A1112 - Das kann ich nicht👎 - Ich schaffe das nie... - Wenn du das wirklich willst, kannst du das schaffen. Ich glaube an dich!
   A1113 - Das ist mein Wochenalltag👍 - So sieht meine Woche aus! - Wow. Du hast den besten Zeitplan den man haben kann, du kannst stolz sein.
 
@@ -40,7 +40,7 @@
   A1111 - Ich schaffe das!👍 - Das schaffe ich natürlich! - Gute Einstellung! Wenn du diese Tipps befolgst, wird sich dein Leben sicher verändern.
 
 1113
-  > Du hast deinen Körper sehr gut unter kontrolle und bist ein sehr gesunder Mensch. Mach weiter so!
+  > Du hast deinen Körper sehr gut unter Kontrolle und bist ein sehr gesunder Mensch. Mach weiter so!
   > Brauchst du sonst bei noch etwas Hilfe?
 
   AELSE - Ja bitte👍 - Ja, bitte! - Klar, gerne!
@@ -49,7 +49,7 @@
 12
   > Wodurch fühlst du dich nicht so gut?
 
-  A121 - Wegen meiner Psyche - Von der Psycher her - Das kann ein sehr großes Problem sein, gerade in Zeiten von Corona, wo jeder alleine daheim ist, und sich viel Stress aufgibt.
+  A121 - Wegen meiner Psyche - Von der Psyche her - Das kann ein sehr großes Problem sein, gerade in Zeiten von Corona, wo jeder alleine daheim ist, und sich viel Stress aufgibt.
   A122 - Ich bin krank - Ich habe mich irgendwo angesteckt - Oje. Warte, ich hab hier ein paar hilfreiche Hinweise für dich.
   A13 - Weiß ich nicht genau - Ich bin mir nicht sicher... - Okay, dann lass uns mal überprüfen warum!
 
@@ -60,12 +60,12 @@
   AEND - Nein👎 - Eher nicht... - Okay schade. Besuche mich wieder, wenn du mit mir chatten möchtest.
 
 1211
-  > 1. Soziale Kontakte sind wichtig. Dabei ist es egal wie - ob über Handy, diverse Chat-Apps wie Discord, oder Persönlich. Obwohl persönliche Treffen meißtens am meißten bewirken.
+  > 1. Soziale Kontakte sind wichtig. Dabei ist es egal wie - ob über Handy, diverse Chat-Apps wie Discord, oder Persönlich. Obwohl persönliche Treffen meistens am meisten bewirken.
   > 2. Reduziere Stress. Plane alles was du machen willst, genau ein, und überlege dir was wichtig und was unwichtig ist.
   > 3. Stoppe negatives denken. Denke positiv in jeder möglichen Situation - es erleichtert dir einiges.
   > 4. Triff deine eigenen Entscheidungen und akzeptiere Veränderungen. Sie werden dir deine Lebensart verändern.
   > 5. Dankbarkeit zeigen und aus Fehlern lernen. Viele Menschen wollen nur helfen.
-  > 6. Langeweile muss nicht gleich schlecht sein - sie kann auch zu kreativität führen.
+  > 6. Langeweile muss nicht gleich schlecht sein - sie kann auch zu Kreativität führen.
   > Das wären dann meine Tipps für bessere Mentalität. Brauchst du sonst noch bei etwas Hilfe?
 
   AELSE - Ja bitte👍 - Ja, bitte! - Klar, gerne!
@@ -97,7 +97,7 @@
   > Achtest du generell sehr stark auf deine Gesundheit?
 
   A1311 - Ja👍 - Ja, natürlich - So gehört sich das. Nichts geht über die eigene Gesundheit.
-  A1311 - Nein - Nein, nicht so stark👎 - Nichts geht über die eigene Gesundheit. Es ist sehr wichtig, dass man sich in seinem Körper wohl und sicher fühlt.
+  A1311 - Nein👎 - Nein, nicht so stark - Nichts geht über die eigene Gesundheit. Es ist sehr wichtig, dass man sich in seinem Körper wohl und sicher fühlt.
 
 1311
   > Treibst du generell Sport?
@@ -112,7 +112,7 @@
   AEND - Nein👎 - Nein, jetzt nicht... - Okay.
 
 13112
-  > Möchtest du fitter werden, und hast lust auf etwas mehr Sport?
+  > Möchtest du fitter werden, und hast Lust auf etwas mehr Sport?
 
   AS1 - Ja👍 - Ja, bitte - Okay, gerne!
   AEND - Nein👎 - Nein danke - Schade, dann nicht.
@@ -126,8 +126,8 @@ S1
 S10
  > Hast du Lust dich am morgen zu dehnen um frisch in den Tag zu starten?
 
- A11 - Ja👍 - Ja klar! Wie soll ich das am besten machen? - Ich kann dir ein gutes Video empfehlen womit ich 3 mal in der Woche in den Tag starte. Schau es dir an https://www.youtube.com/watch?v=c1A45LuuWhE
- A11 - Nein👎 - Nein, bin kein Morgenmensch - Alles klar. Es ist auch okay eher ruhiger in den Tag zu starten.
+ AS11 - Ja👍 - Ja klar! Wie soll ich das am besten machen? - Ich kann dir ein gutes Video empfehlen womit ich 3 mal in der Woche in den Tag starte. Schau es dir an https://www.youtube.com/watch?v=c1A45LuuWhE
+ AS11 - Nein👎 - Nein, bin kein Morgenmensch - Alles klar. Es ist auch okay eher ruhiger in den Tag zu starten.
 
 S11
  > Wie siehts mit gehen aus?
@@ -171,11 +171,11 @@ S52
 S54
  >Möchtest du noch einen Fitnesstipp haben?
 
- AS13 -  Ja👍 - Immer! Nur her damit - Dann solltest du dir dieses Video anschauen https://www.youtube.com/watch?v=8_IUR_AjP34 und wenn du noch Wissenhungrig bist dann solltest du dir Youtuber wie Sascha Huber (https://www.youtube.com/user/keiiner123), Tim Gabel (https://www.youtube.com/user/timgabelofficial), Coach Stef ( https://www.youtube.com/user/60DaysOfFitness ) und viele mehr anschauen, oder es spricht auch nichts dagegen dich in ein paar Bücher einzulesen.
+ AS13 -  Ja👍 - Immer! Nur her damit - Dann solltest du dir dieses Video anschauen https://www.youtube.com/watch?v=8_IUR_AjP34 und wenn du noch mehr Wissbegierig bist dann solltest du dir Youtuber wie Sascha Huber (https://www.youtube.com/user/keiiner123), Tim Gabel (https://www.youtube.com/user/timgabelofficial), Coach Stef ( https://www.youtube.com/user/60DaysOfFitness ) und viele mehr anschauen, oder es spricht auch nichts dagegen dich in ein paar Bücher einzulesen.
 
 S75
  > Für daheim empfehle ich vor allem Workouts.
- > Erst recht in der aktuellen Situation, wo man meistens zu Hause bleiben muss
+ > Erst recht in der aktuellen Situation, wo man meistens zu Hause bleiben muss.
  > Möchtest du ein paar Empfehlungen?
 
  AS13 - Ja👍 - Sicher, wenn du ein paar gute hast. - Klar! Der Youtuber Sascha Huber ist sehr zu empfehlen. Auf seinen Kanal findest du Trainingspläne, Ernährungspläne und vor allem Workouts. Hier https://www.youtube.com/user/keiiner123
