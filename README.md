@@ -1,7 +1,7 @@
 # MediBot🤖
 THis is the source code for the challenge "Hackathon für gute KI #4GoodAI" 2020 - rewarded with the 2nd place.🥈
 
-# The Project📃
+## The Project📃
 You can find our project [here](https://medibot.at), where you can try out all the features.
 
 ## Features💻
