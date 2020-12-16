@@ -146,7 +146,7 @@ S12
 S13
  > Hast du lust auf eine Übersicht über Sport und Gesundheit?
 
- AS75 - Zeig mal her👍  - Ja, bitte! - Hier hast du eine Übersicht: https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
+ AELSE - Zeig mal her👍  - Ja, bitte! - Hier hast du eine Übersicht: https://www.sportaustria.at/de/schwerpunkte/soziales-und-gesellschaftspolitik/sport-und-gesundheit/
 
 S50
 
@@ -191,7 +191,9 @@ ELSE
   AEND - Beenden❌ - Ich möchte beenden. - Okay.
 
 ABOUT
-  > MediBot - A project by Markus, Christoph and Toby 2020
+  > MediBot - Ein Projekt für den "Hackathon für gute KI #4GoodAI" - ausgezeichnet mit dem 2. Platz🏆
+  > Gemacht von Christoph, Markus und Tobias
+  > Deine Daten werden von uns nicht aufgezeichnet - alles was du eingibst, liegt in deinem Browser, und wir haben keinen zugriff darauf.
   > Jegliche gegebenen Tipps dienen nur als Empfehlungen, bestehen teilweise aus eigenen Erfahrungen oder Online-Quellen, und sind weder wissenschaftlich empfohlen, noch müssen sie eingehalten werden.
 
   AELSE - Zurück🔙 - Zurück bitte! - Selbstverständlich.
