@@ -7,6 +7,7 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/gebes/medi_bot/total)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gebes/medi_bot)
 ![GitHub language count](https://img.shields.io/github/languages/count/gebes/medi_bot)
+
 This is the source code for the challenge "Hackathon für gute KI #4GoodAI" 2020 - rewarded with the 2nd place.🥈
 
 ## The Project📃
