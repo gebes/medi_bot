@@ -1,5 +1,13 @@
 # MediBot🤖
-THis is the source code for the challenge "Hackathon für gute KI #4GoodAI" 2020 - rewarded with the 2nd place.🥈
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/gebes/medi_bot)
+![GitHub all releases](https://img.shields.io/github/downloads/gebes/medi_bot/total)
+![GitHub contributors](https://img.shields.io/github/contributors/gebes/medi_bot)
+![GitHub last commit](https://img.shields.io/github/last-commit/gebes/medi_bot)
+![GitHub issues](https://img.shields.io/github/issues-raw/gebes/medi_bot)
+![GitHub all releases](https://img.shields.io/github/downloads/gebes/medi_bot/total)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/gebes/medi_bot)
+![GitHub language count](https://img.shields.io/github/languages/count/gebes/medi_bot)
+This is the source code for the challenge "Hackathon für gute KI #4GoodAI" 2020 - rewarded with the 2nd place.🥈
 
 ## The Project📃
 You can find our project [here](https://medibot.at), where you can try out all the features.
