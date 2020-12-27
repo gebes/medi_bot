@@ -21,7 +21,7 @@ Editing what the bot says and what it response is also made easy - you can edit 
 Install Flutter & Dart for your OS by following [this guide](https://flutter.dev/docs/get-started/install).  
 As IDE, you could use Visual Studio Code, IntelliJ or Android Studio. Optional you can download the Flutter plugin/extension in each IDE.
 
-### How To Run the bot as app📱
+### How to run the bot as a app📱
 1. Open the `medi_bot` folder in your IDE
 2. Then run `flutter pub get` (may take a while) in the console
    * This downloads all required dependencies
@@ -38,6 +38,6 @@ As IDE, you could use Visual Studio Code, IntelliJ or Android Studio. Optional y
 3. Execute `flutter config --enable-web`, then create a release by executing `flutter run -d web --release`
 
 ## What we learned💡
-- Creating a chat bot from a simple file
+- How to create a ChatBot with a custom Interpreter
 - How to collaborate as a team
 - How to use flutter for web-based builds
