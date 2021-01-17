@@ -1,15 +1,10 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:animate_do/animate_do.dart';
-import 'package:bubble/bubble.dart';
 import 'package:dash_chat/dash_chat.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
 import 'package:medi_bot/data/chat_data.dart';
-import 'package:medi_bot/utils/if_builder.dart';
-import 'package:medi_bot/utils/navigator.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:indent/indent.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -114,7 +109,8 @@ class _MainScreenState extends State<MainScreen> {
         }
       }
       setState(() {
-        messages.add(ChatMessage(text: filterMessage(message), user: botUser, quickReplies: QuickReplies(values: replies)));
+        messages
+            .add(ChatMessage(text: filterMessage(message), user: botUser, quickReplies: QuickReplies(values: replies)));
       });
       _jumpToBottom();
     }
@@ -132,14 +128,15 @@ class _MainScreenState extends State<MainScreen> {
   Widget build(BuildContext context) {
     var patterns = <MatchText>[
       MatchText(
-          pattern: r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
+          pattern:
+              r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
           style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
           onTap: (String value) {
             _launch(value);
           }),
     ];
-    return PlatformScaffold(
-      appBar: PlatformAppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text("MediBot - Chatbot für deine Gesundheit"),
       ),
       body: DashChat(
