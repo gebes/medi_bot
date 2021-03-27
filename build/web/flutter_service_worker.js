@@ -3,18 +3,18 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "342f0df0cbacc1b023268993bdc44038",
-"assets/assets/dialog.txt": "765efc7ee1731468d4d18be0c479091e",
-"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
-"assets/NOTICES": "5ee6accbe43f59a88fc727c2f007a132",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
+  "version.json": "d08b536e518884e23673ea24ffb4273a",
+"index.html": "f5f51693b39b2860979c1206b67d0574",
+"/": "f5f51693b39b2860979c1206b67d0574",
+"main.dart.js": "e6cac03be985c2397a793edf1652047f",
 "favicon.png": "859f63b7f1134ec5d7df12c66f161cbe",
-"index.html": "4a09f15b5cfb951704364fa05ae2e9fa",
-"/": "4a09f15b5cfb951704364fa05ae2e9fa",
-"main.dart.js": "e5851be29332817245e43054db375ea4",
-"manifest.json": "b6b48097fc2ec45c5d62d017e20141d2",
-"version.json": "d08b536e518884e23673ea24ffb4273a"
+"manifest.json": "eceffee3d37f93a153573d57ed4e11bd",
+"assets/AssetManifest.json": "342f0df0cbacc1b023268993bdc44038",
+"assets/NOTICES": "65e690c261aad7d01cffe9946efe6cb1",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "b14fcf3ee94e3ace300b192e9e7c8c5d",
+"assets/fonts/MaterialIcons-Regular.otf": "27206588da6d3d24f71ec64067b75eb0",
+"assets/assets/dialog.txt": "c1b0951240d68c52db1685bcc40120ea"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -32,7 +32,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
@@ -158,7 +158,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }

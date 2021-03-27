@@ -1,21 +1,17 @@
 import 'dart:convert';
 import 'dart:math';
 
-import 'package:animate_do/animate_do.dart';
-import 'package:bubble/bubble.dart';
 import 'package:dash_chat/dash_chat.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
-import 'package:medi_bot/data/chat_data.dart';
-import 'package:medi_bot/utils/if_builder.dart';
-import 'package:medi_bot/utils/navigator.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:indent/indent.dart';
+import 'package:medi_bot/data/chat_data.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 var kBoxShadow = [
-  new BoxShadow(color: Colors.black.withAlpha(50), blurRadius: 4.0, offset: Offset(2, 3)),
+  new BoxShadow(
+      color: Colors.black.withAlpha(50), blurRadius: 4.0, offset: Offset(2, 3)),
 ];
 
 class MainScreen extends StatefulWidget {
@@ -45,9 +41,11 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   static ChatUser theUser = ChatUser(name: "Ich", uid: "1");
-  static ChatUser botUser = ChatUser(name: "MediBot", uid: "2", avatar: "https://i.imgur.com/ZrQy11C.png");
+  static ChatUser botUser = ChatUser(
+      name: "MediBot", uid: "2", avatar: "https://i.imgur.com/ZrQy11C.png");
 
-  ChatData chatData = ChatData(messages: ["Hallo", ">>Hey! Wie geht es dir so?"]);
+  ChatData chatData =
+      ChatData(messages: ["Hallo", ">>Hey! Wie geht es dir so?"]);
   Map<String, String> sections = {};
   String currentSection = "1";
   List<ChatMessage> messages = [];
@@ -104,7 +102,8 @@ class _MainScreenState extends State<MainScreen> {
     }
 
     for (String message in messagesToSend) {
-      await Future.delayed(Duration(milliseconds: min(250 * messages.length, 2000)));
+      await Future.delayed(
+          Duration(milliseconds: min(250 * messages.length, 2000)));
       List<Reply> replies = [];
       if (message == messagesToSend.last) {
         for (String r in parsedReactions) {
@@ -114,32 +113,33 @@ class _MainScreenState extends State<MainScreen> {
         }
       }
       setState(() {
-        messages.add(ChatMessage(text: filterMessage(message), user: botUser, quickReplies: QuickReplies(values: replies)));
+        messages.add(ChatMessage(
+            text: filterMessage(message),
+            user: botUser,
+            quickReplies: QuickReplies(values: replies)));
       });
       _jumpToBottom();
     }
   }
 
   _jumpToBottom() {
-    sc.animateTo(
-      sc.position.maxScrollExtent + 128,
-      curve: Curves.easeOut,
-      duration: const Duration(milliseconds: 300),
-    );
+    sc.jumpTo(sc.position.maxScrollExtent);
   }
 
   @override
   Widget build(BuildContext context) {
     var patterns = <MatchText>[
       MatchText(
-          pattern: r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
-          style: TextStyle(color: Colors.blue, decoration: TextDecoration.underline),
+          pattern:
+              r"https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)",
+          style: TextStyle(
+              color: Colors.blue, decoration: TextDecoration.underline),
           onTap: (String value) {
             _launch(value);
           }),
     ];
-    return PlatformScaffold(
-      appBar: PlatformAppBar(
+    return Scaffold(
+      appBar: AppBar(
         title: Text("MediBot - Chatbot für deine Gesundheit"),
       ),
       body: DashChat(
@@ -154,13 +154,15 @@ class _MainScreenState extends State<MainScreen> {
         onQuickReply: (reply) async {
           Reaction reaction = Reaction.fromString(reply.value);
           setState(() {
-            messages.add(ChatMessage(text: filterMessage(reaction.value), user: theUser));
+            messages.add(ChatMessage(
+                text: filterMessage(reaction.value), user: theUser));
             currentSection = reaction.next;
           });
           _jumpToBottom();
           await Future.delayed(Duration(milliseconds: 250 * messages.length));
           setState(() {
-            messages.add(ChatMessage(text: filterMessage(reaction.response), user: botUser));
+            messages.add(ChatMessage(
+                text: filterMessage(reaction.response), user: botUser));
           });
           _jumpToBottom();
           sendCurrentSection();
@@ -192,7 +194,8 @@ class _MainScreenState extends State<MainScreen> {
                 fit: BoxFit.fill,
               ),
             ),
-            decoration: BoxDecoration(boxShadow: kBoxShadow, borderRadius: BorderRadius.circular(32)),
+            decoration: BoxDecoration(
+                boxShadow: kBoxShadow, borderRadius: BorderRadius.circular(32)),
           );
         },
         messageTextBuilder: (text, [message]) {
@@ -206,7 +209,9 @@ class _MainScreenState extends State<MainScreen> {
               parse: patterns,
               text: message.text,
               style: TextStyle(
-                color: message.user.color != null ? message.user.color : Colors.black87,
+                color: message.user.color != null
+                    ? message.user.color
+                    : Colors.black87,
               ),
             );
           }
